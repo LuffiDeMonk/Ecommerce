@@ -1,0 +1,22 @@
+.home__categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.category__card {
+  width: 15rem;
+  margin-left: 2rem;
+  cursor: pointer;
+  &__image {
+    object-fit: contain;
+    img {
+      width: 100%;
+    }
+  }
+  &__title {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 1rem;
+  }
+}

@@ -1,0 +1,215 @@
+@import "../../App.scss";
+.navbar {
+  padding: 0;
+  height: 5rem;
+  background-color: $background-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__controller {
+    display: none;
+  }
+  &__header {
+    height: 100%;
+    padding: 1.2rem;
+    display: flex;
+    align-items: center;
+    margin-left: 3rem;
+    font-size: 1.2rem;
+    background: $logo-color;
+    border: 0.2rem solid white;
+    color: whitesmoke;
+    text-decoration: none;
+    &:hover {
+      color: whitesmoke;
+    }
+  }
+  &__searchbar {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    form {
+      height: 2rem;
+      min-width: 25rem;
+      display: flex;
+      border-bottom: 1px solid black;
+
+      input {
+        height: 100%;
+        width: 100%;
+        padding: 0.3rem;
+        font-size: 0.8rem;
+        border: none;
+        outline: none;
+        background: transparent;
+      }
+      button {
+        padding: 0 0.3rem;
+        border: none;
+        outline: none;
+        background-color: transparent;
+      }
+    }
+  }
+  &__links {
+    font-size: 0.8rem;
+    text-align: center;
+    margin-right: 1.5rem;
+
+    ul {
+      padding-top: 1rem;
+      list-style: none;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+    }
+    .li {
+      margin-right: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+      color: #000;
+    }
+    li:hover {
+      color: $logo-color;
+    }
+  }
+}
+@media only screen and (max-width: $large) {
+  .navbar {
+    &__header {
+      margin-left: 1.2rem;
+    }
+
+    &__controller {
+      margin-right: 1rem;
+      display: block;
+      cursor: pointer;
+    }
+    &__links {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 5rem;
+      background: $background-color;
+      display: none;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        li {
+          margin: 1rem;
+        }
+      }
+    }
+  }
+  .open {
+    display: block;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: $medium) {
+  .navbar {
+    &__searchbar {
+      form {
+        min-width: 10rem;
+      }
+    }
+    &__controller {
+      margin-right: 1rem;
+      display: block;
+      cursor: pointer;
+    }
+    &__links {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 5rem;
+      background: $background-color;
+      display: none;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        li {
+          margin: 1rem;
+        }
+      }
+    }
+  }
+  .open {
+    display: block;
+    width: 100%;
+    z-index: 2;
+  }
+}
+@media only screen and (max-width: $small) {
+  .navbar {
+    &__searchbar {
+      form {
+        min-width: 5rem;
+      }
+    }
+    &__controller {
+      margin-right: 1rem;
+      display: block;
+      cursor: pointer;
+    }
+    &__links {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 5rem;
+      background: $background-color;
+      display: none;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        li {
+          margin: 1rem;
+        }
+      }
+    }
+  }
+  .open {
+    display: block;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .navbar {
+    &__searchbar {
+      form {
+        min-width: 5rem;
+        input {
+          font-size: 0.4rem;
+        }
+      }
+    }
+    &__controller {
+      margin-right: 1rem;
+      display: block;
+      cursor: pointer;
+    }
+    &__links {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 5rem;
+      background: $background-color;
+      display: none;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        li {
+          margin: 1rem;
+        }
+      }
+    }
+  }
+}

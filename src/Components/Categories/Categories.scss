@@ -1,0 +1,27 @@
+@import "../../App.scss";
+.category {
+  &__title {
+    text-align: center;
+    font-size: 2rem;
+  }
+  &__filter {
+    float: right;
+    margin-right: 1rem;
+    button {
+      background-color: $background-color !important;
+      border: transparent;
+      padding: 2 1rem;
+      font-size: 0.8rem;
+      border-radius: 999px;
+    }
+    ul {
+      font-size: 0.8rem;
+    }
+  }
+  &__container {
+    margin: 5rem;
+  }
+}
+.dropdown-item {
+  cursor: pointer;
+}
